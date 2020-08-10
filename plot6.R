@@ -43,6 +43,6 @@ vehicle_emission_la_balt_sum <- aggregate(Emissions ~ year + fips, vehicle_emiss
 
 
 #Opting for qplot, which is part of the ggplot2 plotting system (as per the assignment)
-png("plot5.png")
+png("plot6.png")
 qplot(data=vehicle_emission_la_balt_sum, year, Emissions, facets=.~fips, geom="line", ylim=c(0,5000), main="Total PM2.5 motor (highway) vehicle emissions by year for LA (fips 06037) and Baltimore (fips 24510")
 dev.off()
